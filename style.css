@@ -1,0 +1,180 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #F3F1FF;
+	font-family: 'Poppins', sans-serif;
+}
+main{
+display: grid;
+justify-content: center;
+align-items: center;
+margin-top: 70px;
+
+}
+.container{
+width: 870px;
+background-color: #FFFFFF;
+margin-bottom: 10px;
+}
+.section-title{
+	margin-top: 30px;
+    margin-left: 33px;
+	color: #562EFF;
+	font-size: 24px;
+	font-weight: 500;
+}
+.players{
+    margin-top: 40px;
+    margin-left: 33px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 29px;}
+
+.player{
+	display: flex;
+    align-items: center;
+}
+.player img{
+width: 56px;
+height: 56px;
+}
+.player .player-name{
+margin-left: 10px;
+font-size: 18px;
+font-family: Poppins;
+font-weight: 500;
+color: #000000;
+}
+hr{
+	border: 1px solid black;
+	margin-top: 32px;
+}
+/*-------------blog section
+-------------------------------*/
+.blogs{
+    margin-left: 33px;
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    padding-bottom: 30px;
+}
+.blog{
+	display: flex;
+}
+.blog img{
+	width: 177px;
+	height: 117px;
+}
+.blog-info{
+	margin-left: 10px;
+}
+.blog-info h3{
+	font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
+.blog-info p {
+	margin-left: -8px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.blog-info p a{
+color:#562EFF;
+text-decoration: none;
+font-size: 16px;
+}
+
+
+
+
+
+.latest-courses{
+	display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    margin-left: 33px;
+	margin-bottom: 33px;
+}
+
+.course img{
+width: 224px;
+height: 104px;
+}
+.course-info{
+line-height: 30px;
+}
+.course-title{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+}
+.course-info a {
+    color: #ED6B4F;
+    text-decoration: none;
+    font-size: 14.69px;
+    font-weight: 400;
+}
+.fotn-icon{
+    display: flex;
+	justify-content: flex-start;
+ 
+}
+.icon{
+display: flex;
+justify-content: ;
+}
+.filled{
+color: orange;
+}
+.empty{
+
+}
+.time{
+    display: flex;
+    margin-left: 48px;
+    background: #ce8e8e;
+    padding: 6px 12px;
+    border-radius: 16px;
+}
+.fa-clock{
+margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:688px) {
+	.container{
+		width: 100%;
+	}
+	.players{
+		grid-template-columns: repeat(1, 1fr);
+	}
+.player{
+	flex-direction: column;
+}
+.blogs{
+	grid-template-columns: repeat(1, 1fr);
+}
+.blog{
+	flex-direction: row;
+}
+.latest-courses{
+	grid-template-columns: repeat(1, 1fr);
+}
+
+}
